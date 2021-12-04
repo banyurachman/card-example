@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Quicksand:wght@600&display=swap');
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-quicksand: 'Quicksand', sans-serif;
+
+$white: #FFFFFF;
+$pale-white: #E7E7E7;
+$light-grey: #949494;
+$grey: #737373;
+$text-black: #444444;
+$green-positive: #3CD278;
+
+@mixin rounded {
+  border-radius: 100%;
+}
+
+* {
+  font-family: $font-montserrat;
+  color: $text-black;
+  word-break: break-word;
+}

@@ -1,0 +1,100 @@
+.card {
+  background: $white;
+  border: $pale-white 1px solid;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 310px;
+  min-width: 220px;
+  position: relative;
+
+  &__header {
+    position: absolute;
+    background: $pale-white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92px;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 7px 7px 0 0;
+    }
+
+    .material-design-icon {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+  }
+
+  &__avatar-follow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 28px;
+    margin-bottom: 48px;
+
+    img {
+      height: 84px;
+      width: 84px;
+      @include rounded;
+      border: 5px white solid;
+      transform: translateY(7px);
+    }
+  }
+
+  &__name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+
+    &-full {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &-id {
+      font-size: 12px;
+      font-weight: 400;
+      color: $light-grey;
+    }
+  }
+
+  &__desc {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+
+    div {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    &-followers {
+      span {
+        font-weight: 800;
+      }
+    }
+
+    &-divider {
+      width: 4px;
+      height: 4px;
+      background: $pale-white;
+      @include rounded;
+    }
+  }
+}

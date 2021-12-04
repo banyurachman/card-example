@@ -1,0 +1,17 @@
+.button {
+  background: $pale-white;
+  display: inline-flex;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-right: 8px;
+  @include rounded;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .material-design-icon {
+    height: 20px;
+  }
+}
